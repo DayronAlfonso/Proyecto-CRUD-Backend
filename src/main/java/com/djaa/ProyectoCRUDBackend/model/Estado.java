@@ -21,6 +21,10 @@ public class Estado {
 	private Pais pais;
 	private String nombre;
 	
+	
+	public Estado() {
+		
+	}
 	//Se crea el constructor
 	public Estado(Pais pais, String nombre) {
 		super();

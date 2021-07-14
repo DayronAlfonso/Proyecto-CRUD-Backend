@@ -34,6 +34,10 @@ public class Persona {
 	@JoinColumn(name = "id_estado")
 	private Estado estado;
 	
+	public Persona() {
+		
+	}
+	
 	//Se crea el constructor
 	public Persona(String nombre, String apellido, String nickname, int edad, Pais pais, Estado estado) {
 		super();

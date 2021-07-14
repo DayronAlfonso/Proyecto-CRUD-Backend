@@ -15,21 +15,23 @@ public class Pais {
 	private int id;
 	
 	private String nombre;
-	private String presidente;
 	
+	public Pais() {
+		
+	}
 	//Se crea el constructor
-	public Pais(String nombre, String presidente) {
+	public Pais(String nombre) {
 		super();
 		this.nombre = nombre;
-		this.presidente = presidente;
 	}
-	
 	//Se generan los Getters and Setters
 	
 	public String getNombre() {
 		return nombre;
 	}
 	
+	
+
 	public int getId() {
 		return id;
 	}
@@ -41,11 +43,6 @@ public class Pais {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getPresidente() {
-		return presidente;
-	}
-	public void setPresidente(String presidente) {
-		this.presidente = presidente;
-	}
+	
 	
 }
