@@ -17,7 +17,7 @@ public class PaisRest {
 	
 	@Autowired
 	private PaisService paisService;
-	
+	 
 	@GetMapping
 	private ResponseEntity<List<Pais>> getAllPais(){
 		return ResponseEntity.ok(paisService.findAll());
