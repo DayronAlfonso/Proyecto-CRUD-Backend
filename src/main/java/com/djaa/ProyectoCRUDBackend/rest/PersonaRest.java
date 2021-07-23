@@ -22,12 +22,12 @@ import com.djaa.ProyectoCRUDBackend.service.PersonaService;
 public class PersonaRest {
 	@Autowired
 	private PersonaService personaService;
-	
+	//Rest de obtener todos los paises
 	@GetMapping
 	private ResponseEntity<List<Persona>> findAllPersonas (){
 			return ResponseEntity.ok(personaService.findAll());
 	}
-	
+	//Rest de guardar y actualizar persona
 	@PostMapping
 	private ResponseEntity<Persona> savePersona	(@RequestBody Persona persona){
 		try {
@@ -37,7 +37,7 @@ public class PersonaRest {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 		}
 	}
-	
+	//Rest eliminar personas por id
 	@DeleteMapping(value = "delete/{id}")
 	private ResponseEntity<Boolean> deletePersona (@PathVariable ("id") Long id)	{
 		personaService.deleteById(id);
