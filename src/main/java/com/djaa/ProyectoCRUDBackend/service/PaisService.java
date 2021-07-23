@@ -116,9 +116,10 @@ public class PaisService implements PaisRepository{
 
 	@Override
 	public Optional<Pais> findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return paisRepository.findById(id);
 	}
+	
+	
 
 	@Override
 	public boolean existsById(Long id) {
