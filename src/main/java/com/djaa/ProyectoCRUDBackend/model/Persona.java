@@ -18,7 +18,7 @@ public class Persona {
 	//Se generan los atributos de persona
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
-	private int id;
+	private Long id;
 	private String nombre;
 	private String apellido;
 	private String nickname;
@@ -55,11 +55,11 @@ public class Persona {
 		return nombre;
 	}
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
