@@ -20,10 +20,12 @@ public class PaisRest {
 	@Autowired
 	private PaisService paisService;
 	 
+	//Rest de obtener todos los paises
 	@GetMapping
 	private ResponseEntity<List<Pais>> getAllPais(){
 		return ResponseEntity.ok(paisService.findAll());
 	}
+	//Rest de obtener paises por id 
 	@GetMapping ("{id}")
 	private ResponseEntity<Optional<Pais>> getAllByPais(@PathVariable Long id){
 		Optional<Pais> queryPais = paisService.findById(id);
